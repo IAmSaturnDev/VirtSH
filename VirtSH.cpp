@@ -26,7 +26,7 @@ int main() {
         }
 
         if (in == "weather") {
-            system("lua weather.lua");
+            system("python3 weather.py");
         }
 
         if (in == "search") {
@@ -35,6 +35,10 @@ int main() {
 
         if (in == "lua") {
             std::cout << "C++ ❤️ Lua\n";
+        }
+
+        if (in == "python") {
+            std::cout << "C++ ❤️ Python\n";
         }
 
         if (in == "exit") {
