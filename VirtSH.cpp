@@ -9,6 +9,7 @@ void functions() {
 }
 
 int main() {
+    int yeetfuels = 0;
     std::cout << "\n";
     std::cout << "     Hello, world!\n";
     std::cout << "   /\n";
@@ -76,9 +77,14 @@ int main() {
             }
         }
 
-        
+        if (in == "yeetfuel") {
+            std::cout << "You knew it :D\n";
+            std::cout << "yeetfuel!!!!\n";
+            yeetfuels++;
+        }
 
-        
+        if (in == "C++") {
+            std::cout << ":O\n";
+        }
     }
-
 }
