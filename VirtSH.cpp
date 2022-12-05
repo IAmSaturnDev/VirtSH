@@ -59,8 +59,24 @@ int main() {
         }
 
         if (in == "sh") {
-            system("lua sh.lua");
+            std::cout << "Enter a shell: zsh bash or sh: ";
+            std::string choice;
+            std::cin >> choice;
+
+            if (choice == "sh") {
+                system("lua sh.lua");
+            }
+
+            if (choice == "bash") {
+                system("lua bash.lua");
+            }
+
+            if (choice == "zsh") {
+                system("lua zsh.lua");
+            }
         }
+
+        
 
         
     }
