@@ -4,7 +4,9 @@
 #include <string.h>
 
 void functions() {
-
+    std::cout << "Commands: Help(how you got here), Weather";
+    std::cout << "\n";
+    
 }
 
 int main() {
@@ -24,7 +26,19 @@ int main() {
         }
 
         if (in == "weather") {
-            system("python3 weather.py");
+            system("lua weather.lua");
+        }
+
+        if (in == "search") {
+
+        }
+
+        if (in == "lua") {
+            std::cout << "C++ ❤️ Lua\n";
+        }
+
+        if (in == "exit") {
+            break;
         }
     }
 
