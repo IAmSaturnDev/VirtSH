@@ -12,6 +12,9 @@ VirtSH will have most of the features that IreSH has but I am planning to add mo
 Install by downloading the source code and running the executable.
 If your on windows you will have to recompile the whole project. (Sorry pals)
 
+Make sure to make an alias in your startup commands file (bashrc zshrc fishrc etc.)
+Make sure all of the project files are in the same directory, or you could change the code yourself to the path of the file you want.
+
 
 # IreSH Questions:
 
@@ -22,3 +25,9 @@ Q. Are you planning to bring it back? A. Maybe...
 # Features:
 
 Weather
+
+# Credits:
+Not everything was made by me :)
+
+
+@igor_chubin for the weather at https://wttr.in follow him at https://twitter.com/igor_chubin and https://github.com/chubin
