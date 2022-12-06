@@ -3,8 +3,8 @@
 #include <unistd.h>
 
 void functions() {
-    std::cout << "Commands: help(how you got here), weather, hi or hello, bye or exit, search, projectsetup, tempclean, sh";
-    std::cout << "\nNotice: All commands are lower cased!";
+    std::cout << "Commands: help(how you got here), weather, hi or hello, bye or exit, search, projectsetup, tempclean, sh, count, calc";
+    std::cout << "\nNotice: All commands are lower cased! Upset some easter eggs! Hint: Check the source code!";
     std::cout << "\n";
     
 }
@@ -82,6 +82,7 @@ int main() {
             std::cout << "You knew it :D\n";
             std::cout << "yeetfuel!!!!\n";
             yeetfuels++;
+            std::cout << "You said yeetfuel " << yeetfuels << "times!\n";
         }
 
         if (in == "C++") {
@@ -148,15 +149,125 @@ int main() {
             std::cout << "   /\n";
             std::cout << "- -\n";
             std::cout << "\n";
-            usleep(3000000);
+            sleep(3);
 
             std::cout << "\n";
             std::cout << "     Ok sorry\n";
             std::cout << "   /\n";
             std::cout << "^ ^\n";
             std::cout << "\n";
+
+            sleep(2);
+
+            std::cout << "\n";
+            std::cout << "     ...\n";
+            std::cout << "   /\n";
+            std::cout << "- -\n";
+            std::cout << "\n";
+
+            sleep(2);
+
+            std::cout << "\n";
+            std::cout << "     Ok your free to go\n";
+            std::cout << "   /\n";
+            std::cout << "^ ^\n";
+            std::cout << "\n";
+        }
+
+        if (in == "UwUcat") {
+            std::cout << "\n";
+            std::cout << "     Get out.\n";
+            std::cout << "   /\n";
+            std::cout << "- -\n";
+            std::cout << "\n";
+            break;
+        }
+
+        if (in == "!") {
+            std::cout << "!\n";
+        }
+
+        if (in == "B++") {
+            std::cout << "I wonder what a type of a language that would be...\n";
+        }
+
+        if (in == "count") {
+            std::cout << "Whats your favorite number? ";
+            int num;
+            std::cin >> num;
+            
+            for (int i = 0; i < num + 1; i++) {
+                std::cout << i << "\n";
+                sleep(1);
+            }
+        }
+
+        if (in == "calc") {
+            std::cout << "Choose an option: 1(+), 2(-), 3(*), 4(/), 5(%)\n";
+            std::string option;
+            std::cin >> option;
+
+            if (option == "1") {
+                double num1;
+                double num2;
+                std::cout << "Num1: ";
+                std::cin >> num1;
+                std::cout << "Num2: ";
+                std::cin >> num2;
+
+                std::cout << num1 + num2 << "\n";
+            }
+
+            if (option == "2") {
+                double num1;
+                double num2;
+                std::cout << "Num1: ";
+                std::cin >> num1;
+                std::cout << "Num2: ";
+                std::cin >> num2;
+
+                std::cout << num1 - num2 << "\n";
+            }
+
+            if (option == "3") {
+                double num1;
+                double num2;
+                std::cout << "Num1: ";
+                std::cin >> num1;
+                std::cout << "Num2: ";
+                std::cin >> num2;
+
+                std::cout << num1 * num2 << "\n";
+            }
+
+            if (option == "4") {
+                double num1;
+                double num2;
+                std::cout << "Num1: ";
+                std::cin >> num1;
+                std::cout << "Num2: ";
+                std::cin >> num2;
+
+                std::cout << num1 / num2 << "\n";
+            }
+
+            if (option == "5") {
+                int num1;
+                int num2;
+                std::cout << "Num1: ";
+                std::cin >> num1;
+                std::cout << "Num2: ";
+                std::cin >> num2;
+
+                std::cout << num1 % num2 << "\n";
+            }
+        }
+
+        if (in == "IreSH") {
+            system("python3 IreSH.py");
         }
     }
 
     return 0; // :D
 }
+// my projects are just getting bigger and bigger!
