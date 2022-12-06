@@ -1,0 +1,5 @@
+weather: Whats the weather?
+projectsetup: creates a temporary project folder Notice: this command works only on unix systems
+search: Google time!
+sh: Pulls up a command line type exit in it to go back to VirtSH
+tempclean: Cleans your temporary files Notice: this command works only on unix systems

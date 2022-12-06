@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 void functions() {
-    std::cout << "Commands: help(how you got here), weather, hi or hello, bye or exit, search";
+    std::cout << "Commands: help(how you got here), weather, hi or hello, bye or exit, search, projectsetup, tempclean, sh";
     std::cout << "\nNotice: All commands are lower cased!";
     std::cout << "\n";
     
@@ -120,13 +120,18 @@ int main() {
                 std::cout << "\n";
             }
 
-            if (in == "projectsetup") {
-                system("python3 tempProjectCreator.py");
-            }
+
 
         }
 
-        
+        if (in == "projectsetup") {
+            system("python3 tempProjectCreator.py");
+        }
+
+        if (in == "tempclean") {
+            std::cout << "This will run as 'sudo' so you will have to enter your password.\n";
+            system("sudo rm -rf /private/tmp/");
+        }
     }
 
     return 0; // :D
