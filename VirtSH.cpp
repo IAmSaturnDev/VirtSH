@@ -41,7 +41,7 @@ int main() {
             std::cout << "C++ ❤️  Python\n";
         }
 
-        if (in == "exit" || in == "bye") {
+        if (in == "exit" || in == "bye" || in == "Bye, world!") {
             std::cout << "\n";
             std::cout << "     Bye, user!\n";
             std::cout << "   /\n";
@@ -92,6 +92,41 @@ int main() {
         if (in == "Hello, world!") {
             system("echo Hello, world!");
         }
+
+        if (in == "?") {
+            std::cout << "\n";
+            std::cout << "     You said ?... do you need a list of commands?\n";
+            std::cout << "   /\n";
+            std::cout << "^ ^\n";
+            std::cout << "\n";
+
+            std::cout << "(y/n)\n";
+            std::string arg;
+            std::cin >> arg;
+
+            if (arg == "y") {
+                functions();
+            }
+
+            if (arg == "n") {
+
+            }
+
+            if (arg == "?") {
+                std::cout << "\n";
+                std::cout << "     Do you know how to read or something?\n";
+                std::cout << "   /\n";
+                std::cout << "- -\n";
+                std::cout << "\n";
+            }
+
+            if (in == "projectsetup") {
+                system("python3 tempProjectCreator.py");
+            }
+
+        }
+
+        
     }
 
     return 0; // :D
