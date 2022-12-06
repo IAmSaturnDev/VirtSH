@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 void functions() {
-    std::cout << "Commands: help(how you got here), weather, hi";
+    std::cout << "Commands: help(how you got here), weather, hi or hello, bye or exit, search";
     std::cout << "\nNotice: All commands are lower cased!";
     std::cout << "\n";
     
@@ -30,7 +30,7 @@ int main() {
         }
 
         if (in == "search") {
-
+            system("python3 search.py");
         }
 
         if (in == "lua") {
@@ -86,5 +86,13 @@ int main() {
         if (in == "C++") {
             std::cout << ":O\n";
         }
+        
+        if (in == "rush e") { std::cout << "Its a great song!\n"; }
+
+        if (in == "Hello, world!") {
+            system("echo Hello, world!");
+        }
     }
+
+    return 0; // :D
 }

@@ -24,7 +24,13 @@ Q. Are you planning to bring it back? A. Maybe...
 
 # Features:
 
+Check the source code for easter eggs :-)
+
 Weather
+
+Search
+
+Quick access Shells
 
 # Credits:
 Not everything was made by me :)
