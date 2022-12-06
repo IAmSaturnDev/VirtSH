@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
+#include <unistd.h>
 
 void functions() {
     std::cout << "Commands: help(how you got here), weather, hi or hello, bye or exit, search, projectsetup, tempclean, sh";
@@ -131,6 +132,29 @@ int main() {
         if (in == "tempclean") {
             std::cout << "This will run as 'sudo' so you will have to enter your password.\n";
             system("sudo rm -rf /private/tmp/");
+        }
+
+        if (in == "about") {
+            std::cout << "\n";
+            std::cout << "     VirtSH is a virtual assistant succeeding IreSH. The development began on Dec 5 2022. For more check out the README!\n";
+            std::cout << "   /\n";
+            std::cout << "^ ^\n";
+            std::cout << "\n";
+        }
+
+        if (in == "UwU") {
+            std::cout << "\n";
+            std::cout << "     Get out.\n";
+            std::cout << "   /\n";
+            std::cout << "- -\n";
+            std::cout << "\n";
+            usleep(3000000);
+
+            std::cout << "\n";
+            std::cout << "     Ok sorry\n";
+            std::cout << "   /\n";
+            std::cout << "^ ^\n";
+            std::cout << "\n";
         }
     }
 
