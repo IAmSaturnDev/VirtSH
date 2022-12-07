@@ -82,7 +82,7 @@ int main() {
             std::cout << "You knew it :D\n";
             std::cout << "yeetfuel!!!!\n";
             yeetfuels++;
-            std::cout << "You said yeetfuel " << yeetfuels << "times!\n";
+            std::cout << "You said yeetfuel " << yeetfuels << " times!\n";
         }
 
         if (in == "C++") {
