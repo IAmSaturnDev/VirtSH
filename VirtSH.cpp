@@ -133,6 +133,7 @@ int main() {
         if (in == "tempclean") {
             std::cout << "This will run as 'sudo' so you will have to enter your password.\n";
             system("sudo rm -rf /private/tmp/");
+            system("sudo mkdir /private/tmp/");
         }
 
         if (in == "about") {
