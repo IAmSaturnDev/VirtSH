@@ -267,6 +267,10 @@ int main() {
         if (in == "IreSH") {
             system("python3 IreSH.py");
         }
+
+        if (in == "Kaimoji") {
+            system("lua KaimojiSay.lua");
+        }
     }
     
     return 0; // :D
