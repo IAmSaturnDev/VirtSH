@@ -27,7 +27,7 @@ int main() {
         }
 
         if (in == "weather") {
-            system("python3 weather.py");
+            system("lua weather.lua");
         }
 
         if (in == "search") {
@@ -36,10 +36,6 @@ int main() {
 
         if (in == "lua") {
             std::cout << "C++ ❤️  Lua\n";
-        }
-
-        if (in == "python") {
-            std::cout << "C++ ❤️  Python\n";
         }
 
         if (in == "exit" || in == "bye" || in == "Bye, world!") {
@@ -124,16 +120,6 @@ int main() {
 
 
 
-        }
-
-        if (in == "projectsetup") {
-            system("python3 tempProjectCreator.py");
-        }
-
-        if (in == "tempclean") {
-            std::cout << "This will run as 'sudo' so you will have to enter your password.\n";
-            system("sudo rm -rf /private/tmp/");
-            system("sudo mkdir /private/tmp/");
         }
 
         if (in == "about") {
@@ -268,7 +254,7 @@ int main() {
             system("python3 IreSH.py");
         }
 
-        if (in == "Kaimoji") {
+        if (in == "kaimoji") {
             system("lua KaimojiSay.lua");
         }
     }

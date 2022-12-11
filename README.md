@@ -1,6 +1,6 @@
 ## Welcome to VirtSH, the successor of IreSH(https://github.com/vSolarWater/IreSH2)
 
-Instead of being made with Python(https://python.org) only, I decided to make it with C++ and Lua(https://lua.org) AND Python!
+Instead of being made with Python(https://python.org) only, I decided to make it with C++ and Lua(https://lua.org).
 
 # NOTICES:
 You will need lua and python install on your computer to run this program!
