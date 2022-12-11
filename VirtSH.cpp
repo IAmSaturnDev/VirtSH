@@ -250,10 +250,6 @@ int main() {
             }
         }
 
-        if (in == "IreSH") {
-            system("python3 IreSH.py");
-        }
-
         if (in == "kaimoji") {
             system("lua KaimojiSay.lua");
         }
