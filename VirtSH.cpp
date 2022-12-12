@@ -11,6 +11,7 @@ void functions() {
 
 int main() {
     int yeetfuels = 0;
+    std::string WOW = "WOW THIS IS AN EASTER EGG!!!!";
     std::cout << "\n";
     std::cout << "     Hello, world!\n";
     std::cout << "   /\n";
