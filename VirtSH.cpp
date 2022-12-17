@@ -3,7 +3,7 @@
 #include <unistd.h>
 
 void functions() {
-    std::cout << "Commands: help(how you got here), weather, hi or hello, bye or exit, search, projectsetup, tempclean, sh, count, calc";
+    std::cout << "Commands: help(how you got here), weather, hi or hello, bye or exit, search, sh, count, calc";
     std::cout << "\nNotice: All commands are lower cased! Upset some easter eggs! Hint: Check the source code!";
     std::cout << "\n";
     
@@ -254,6 +254,9 @@ int main() {
         if (in == "kaimoji") {
             system("lua KaimojiSay.lua");
         }
+
+        // easter egg :D
+
     }
     
     return 0; // :D
