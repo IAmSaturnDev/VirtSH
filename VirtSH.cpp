@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+// randomly added comment NONE OF YOUR CONSERN! :D
+
 void functions() {
     std::cout << "Commands: help(how you got here), weather, hi or hello, bye or exit, search, sh, count, calc";
     std::cout << "\nNotice: All commands are lower cased! Upset some easter eggs! Hint: Check the source code!";
