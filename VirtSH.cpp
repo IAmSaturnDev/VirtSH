@@ -5,7 +5,7 @@
 // randomly added comment NONE OF YOUR CONSERN! :D
 
 void functions() {
-    std::cout << "Commands: help(how you got here), weather, hi or hello, bye or exit, search, sh, count, calc";
+    std::cout << "Commands: help(how you got here), weather, hi or hello, bye or exit, search, sh, count, calc, say";
     std::cout << "\nNotice: All commands are lower cased! Upset some easter eggs! Hint: Check the source code!";
     std::cout << "\n";
     
@@ -253,8 +253,8 @@ int main() {
             }
         }
 
-        if (in == "kaimoji") {
-            system("lua KaimojiSay.lua");
+        if (in == "say") {
+            system("lua ancsiisay.lua");
         }
 
         // easter egg :D
