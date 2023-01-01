@@ -36,6 +36,10 @@ Search
 
 Quick access Shells
 
+Calculator (Going to be revamped)
+
+And more!
+
 # Credits:
 Not everything was made by me :)
 
