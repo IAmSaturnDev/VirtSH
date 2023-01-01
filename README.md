@@ -13,6 +13,19 @@ If your on windows you will have to recompile the whole project. (Sorry pals)
 Make sure to make an alias in your startup commands file (bashrc zshrc fishrc etc.)
 Make sure all of the project files are in the same directory, or you could change the code yourself to the path of the file you want.
 
+OR
+
+You can use the docker image!
+Open your commandline and run these two commands!
+
+```
+docker pull saturndev/virtsh
+```
+
+```
+docker run -it saturndev/virtsh
+```
+
 # Features:
 
 Check the source code for easter eggs :-)
