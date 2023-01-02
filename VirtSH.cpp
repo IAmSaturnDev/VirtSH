@@ -6,7 +6,7 @@
 // randomly added comment NONE OF YOUR CONSERN! :D
 
 void functions() {
-    std::cout << "Commands: help(how you got here), weather, hi or hello, bye or exit, search, sh, count, calc, say";
+    std::cout << "Commands: help(how you got here), weather, hi or hello, bye or exit, search, sh, count, calc, say\nlist, license";
     std::cout << "\nNotice: All commands are lower cased! Upset some easter eggs! Hint: Check the source code!";
     std::cout << "\n";
     
@@ -67,21 +67,21 @@ int main() {
             std::cout << "\n";
         }
 
-        if (in == "sh") {
+        if (in == "shell") {
             std::cout << "Enter a shell: zsh bash or sh: ";
             std::string choice;
             std::cin >> choice;
 
             if (choice == "sh") {
-                system("lua sh.lua");
+                system("sh");
             }
 
             if (choice == "bash") {
-                system("lua bash.lua");
+                system("bash");
             }
 
             if (choice == "zsh") {
-                system("lua zsh.lua");
+                system("zsh");
             }
         }
 
@@ -686,10 +686,39 @@ int main() {
             system("lua ancsiisay.lua");
         }
 
+        if (in == "list") {
+            bool done = false;
+            std::cout << "What is the name of your list: ";
+            std::string name;
+            std::cin >> name;
+            std::cout << "The name of your list is: " << name << ".\n";
+            std::string list[] = {};
+
+            while (!done) {
+                std::string item;
+                std::cout << "Enter a item or type done: ";
+                std::cin >> item;
+                if (item == "done") {
+                    done = true;
+                }
+                
+                list->append(item);
+            }
+
+            for (std::string i : list) {
+                std::cout << i << "\n";
+            }
+            
+        }
+
+        if (in == "license") {
+            system("cat LICENSE.txt");
+        }
+
         // easter egg :D
 
     }
     
     return 0; // :D
 }
-// MILESTONE!!!
+// This is my BIGGEST program EVER

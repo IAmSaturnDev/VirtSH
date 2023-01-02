@@ -7,7 +7,7 @@ VirtSH will have most of the features that IreSH has but I am planning to add mo
 
 # Installation:
 
-Install by downloading the source code and running the executable.
+Install by downloading the source code and running the executable. (Allows you to edit VirtSH to your liking.)
 If your on windows you will have to recompile the whole project. (Sorry pals)
 
 Make sure to make an alias in your startup commands file (bashrc zshrc fishrc etc.)
@@ -15,8 +15,8 @@ Make sure all of the project files are in the same directory, or you could chang
 
 OR
 
-You can use the docker image!
-Open your commandline and run these two commands!
+You can use the docker image! (Easier and Recommended)
+Open your commandline and run these two commands! 
 
 ```
 docker pull saturndev/virtsh
@@ -36,7 +36,7 @@ Search
 
 Quick access Shells
 
-Calculator (Going to be revamped)
+Calculator
 
 And more!
 
