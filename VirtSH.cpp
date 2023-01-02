@@ -731,3 +731,9 @@ int main() {
 }
 // This is my BIGGEST program EVER...
 // only because of the calculator :|
+
+
+// THE K
+// THE THX
+// THE BYE
+// KTHXBYE
