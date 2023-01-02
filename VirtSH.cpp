@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <unistd.h>
+#include <cmath>
 
 // randomly added comment NONE OF YOUR CONSERN! :D
 
@@ -19,6 +20,13 @@ int main() {
     std::cout << "   /\n";
     std::cout << "^ ^\n";
     std::cout << "\n";
+
+    double a = 0;
+    double b = 0;
+    double c = 0;
+    double x = 0;
+    double y = 0;
+    double z = 0;
 
     while (true) {
         std::string in;
@@ -133,45 +141,6 @@ int main() {
             std::cout << "\n";
         }
 
-        if (in == "UwU") {
-            std::cout << "\n";
-            std::cout << "     Get out.\n";
-            std::cout << "   /\n";
-            std::cout << "- -\n";
-            std::cout << "\n";
-            sleep(3);
-
-            std::cout << "\n";
-            std::cout << "     Ok sorry\n";
-            std::cout << "   /\n";
-            std::cout << "^ ^\n";
-            std::cout << "\n";
-
-            sleep(2);
-
-            std::cout << "\n";
-            std::cout << "     ...\n";
-            std::cout << "   /\n";
-            std::cout << "- -\n";
-            std::cout << "\n";
-
-            sleep(2);
-
-            std::cout << "\n";
-            std::cout << "     Ok your free to go\n";
-            std::cout << "   /\n";
-            std::cout << "^ ^\n";
-            std::cout << "\n";
-        }
-
-        if (in == "UwUcat") {
-            std::cout << "\n";
-            std::cout << "     Get out.\n";
-            std::cout << "   /\n";
-            std::cout << "- -\n";
-            std::cout << "\n";
-            break;
-        }
 
         if (in == "!") {
             std::cout << "!\n";
@@ -193,63 +162,523 @@ int main() {
         }
 
         if (in == "calc") {
-            std::cout << "Choose an option: 1(+), 2(-), 3(*), 4(/), 5(%)\n";
-            std::string option;
-            std::cin >> option;
+            while (true) {
+                std::cout << "Choose an option: exit, +, -, *, /, %, ^, sqrt, abs, cos, sin\n";
+                std::string option;
+                std::cin >> option;
 
-            if (option == "1") {
-                double num1;
-                double num2;
-                std::cout << "Num1: ";
-                std::cin >> num1;
-                std::cout << "Num2: ";
-                std::cin >> num2;
+                if (option == "exit") 
+                {
+                    break;
+                }
 
-                std::cout << num1 + num2 << "\n";
-            }
+                if (option == "+")
+                {
+                    double num1;
+                    double num2;
+                    std::cout << "Num1: ";
+                    std::cin >> num1;
+                    std::cout << "Num2: ";
+                    std::cin >> num2;
 
-            if (option == "2") {
-                double num1;
-                double num2;
-                std::cout << "Num1: ";
-                std::cin >> num1;
-                std::cout << "Num2: ";
-                std::cin >> num2;
+                    std::cout << num1 + num2 << "\n";
+                }
 
-                std::cout << num1 - num2 << "\n";
-            }
+                if (option == "-")
+                {
+                    double num1;
+                    double num2;
+                    std::cout << "Num1: ";
+                    std::cin >> num1;
+                    std::cout << "Num2: ";
+                    std::cin >> num2;
 
-            if (option == "3") {
-                double num1;
-                double num2;
-                std::cout << "Num1: ";
-                std::cin >> num1;
-                std::cout << "Num2: ";
-                std::cin >> num2;
+                    std::cout << num1 - num2 << "\n";
+                }
 
-                std::cout << num1 * num2 << "\n";
-            }
+                if (option == "*")
+                {
+                    double num1;
+                    double num2;
+                    std::cout << "Num1: ";
+                    std::cin >> num1;
+                    std::cout << "Num2: ";
+                    std::cin >> num2;
 
-            if (option == "4") {
-                double num1;
-                double num2;
-                std::cout << "Num1: ";
-                std::cin >> num1;
-                std::cout << "Num2: ";
-                std::cin >> num2;
+                    std::cout << num1 * num2 << "\n";
+                }
 
-                std::cout << num1 / num2 << "\n";
-            }
+                if (option == "/")
+                {
+                    double num1;
+                    double num2;
+                    std::cout << "Num1: ";
+                    std::cin >> num1;
+                    std::cout << "Num2: ";
+                    std::cin >> num2;
 
-            if (option == "5") {
-                int num1;
-                int num2;
-                std::cout << "Num1: ";
-                std::cin >> num1;
-                std::cout << "Num2: ";
-                std::cin >> num2;
+                    std::cout << num1 / num2 << "\n";
+                }
 
-                std::cout << num1 % num2 << "\n";
+                if (option == "%")
+                {
+                    int num1;
+                    int num2;
+                    std::cout << "Num1: ";
+                    std::cin >> num1;
+                    std::cout << "Num2: ";
+                    std::cin >> num2;
+
+                    std::cout << num1 % num2 << "\n";
+                }
+
+                if (option == "^") 
+                {
+                    double num1;
+                    double num2;
+                    std::cout << "Num1: ";
+                    std::cin >> num1;
+                    std::cout << "Num2: ";
+                    std::cin >> num2;
+                    
+
+                    std::cout << pow(num1, num2) << "\n";
+                }
+
+                if (option == "sqrt") 
+                {
+                    double num;
+
+                    std::cout << "Num: ";
+                    std::cin >> num;
+
+                    std::cout << sqrt(num) << "\n";
+                }
+
+                if (option == "abs") 
+                {
+                    double num;
+                    std::cout << "Num: ";
+                    std::cin >> num;
+
+                    std::cout << abs(num) << "\n";
+                }
+
+                if (option == "sin") 
+                {
+                    std::cout << "Enter a option: sin sinlf\n";
+                    std::string option1;
+                    std::cin >> option1;
+
+                    if (option1 == "sin") 
+                    {
+                        double num;
+                        std::cout << "Num: ";
+                        std::cin >> num;
+                        std::cout << sin(num) << "\n";
+                    }
+
+                    if (option1 == "sinl")
+                    {
+                        double num;
+                        std::cout << "Num: ";
+                        std::cin >> num;
+                        std::cout << sinl(num) << "\n";
+                    }
+                }
+
+                if (option == "cos")
+                {
+                    std::cout << "Enter a option: cos cosl\n";
+                    std::string option1;
+                    std::cin >> option1;
+
+                    if (option1 == "cos")
+                    {
+                        double num;
+                        std::cout << "Num: ";
+                        std::cin >> num;
+                        std::cout << cos(num) << "\n";
+                    }
+
+                    if (option1 == "cosl")
+                    {
+                        double num;
+                        std::cout << "Num: ";
+                        std::cin >> num;
+                        std::cout << cosl(num) << "\n";
+                    }
+
+                }
+
+                if (option == "var") {
+                    std::string opt;
+                    std::cout << "You have 6 variables.\n";
+                    std::cout << "They are a, b, c, x, y, z\n";
+                    std::cout << "Do you want to 'edit' or do 'math' with them?\n";
+
+                    if (opt == "edit") {
+                        double num;
+                        char var;
+                        std::cout << "Enter a number: ";
+                        std::cin >> num;
+                        
+                        std::cout << "Enter a variable (lowercase!): ";
+                        std::cin >> var;
+
+                        if (var == 'a') 
+                        {
+                            a = num;
+                        }
+
+                        if (var == 'b')
+                        {
+                            b = num;
+                        }
+
+                        if (var == 'c')
+                        {
+                            c = num;
+                        }
+
+                        if (var == 'x')
+                        {
+                            x = num;
+                        }
+
+                        if (var == 'y')
+                        {
+                            y = num;
+                        }
+
+                        if (var == 'z')
+                        {
+                            z = num;
+                        }
+                    }
+
+                    if (opt == "math") {
+                        std::cout << "Choose an option:  +, -, *, /, %, ^, sqrt\n";
+                        std::string option;
+                        std::cin >> option;
+
+
+                        if (option == "+")
+                        {
+                            double num1 = 3;
+                            double num2;
+
+                            char var2;
+                            std::cout << "Enter a variable (lowercase!): ";
+                            std::cin >> var2;
+
+                            if (var2 == 'a')
+                            {
+                                num1 = a;
+                            }
+
+                            if (var2 == 'b')
+                            {
+                                num1 = b;
+                            }
+
+                            if (var2 == 'c')
+                            {
+                                num1 = c;
+                            }
+
+                            if (var2 == 'x')
+                            {
+                                num1 = x;
+                            }
+
+                            if (var2 == 'y')
+                            {
+                                num1 = y;
+                            }
+
+                            if (var2 == 'z')
+                            {
+                                num1 = z;
+                            }
+
+                            std::cout << "Num2 (Num1 is the variable!): ";
+                            std::cin >> num2;
+
+                            std::cout << num1 + num2 << "\n";
+                        }
+
+                        if (option == "-")
+                        {
+                            double num1 = 3;
+                            double num2;
+
+                            char var2;
+                            std::cout << "Enter a variable (lowercase!): ";
+                            std::cin >> var2;
+
+                            if (var2 == 'a')
+                            {
+                                num1 = a;
+                            }
+
+                            if (var2 == 'b')
+                            {
+                                num1 = b;
+                            }
+
+                            if (var2 == 'c')
+                            {
+                                num1 = c;
+                            }
+
+                            if (var2 == 'x')
+                            {
+                                num1 = x;
+                            }
+
+                            if (var2 == 'y')
+                            {
+                                num1 = y;
+                            }
+
+                            if (var2 == 'z')
+                            {
+                                num1 = z;
+                            }
+
+                            std::cout << "Num2 (Num1 is the variable!): ";
+                            std::cin >> num2;
+
+                            std::cout << num1 - num2 << "\n";
+                        }
+
+                        if (option == "*")
+                        {
+                            double num1 = 3;
+                            double num2;
+
+                            char var2;
+                            std::cout << "Enter a variable (lowercase!): ";
+                            std::cin >> var2;
+
+                            if (var2 == 'a') 
+                            {
+                                num1 = a;
+                            }
+                            
+                            if (var2 == 'b')
+                            {
+                                num1 = b;
+                            }
+
+                            if (var2 == 'c')
+                            {
+                                num1 = c;
+                            }
+
+                            if (var2 == 'x')
+                            {
+                                num1 = x;
+                            }
+
+                            if (var2 == 'y')
+                            {
+                                num1 = y;
+                            }
+
+                            if (var2 == 'z')
+                            {
+                                num1 = z;
+                            }
+
+            
+                            std::cout << "Num2 (Num1 is the variable!): ";
+                            std::cin >> num2;
+
+                            std::cout << num1 * num2 << "\n";
+                        }
+
+                        if (option == "/")
+                        {
+                            double num1 = 3;
+                            double num2;
+
+                            char var2;
+                            std::cout << "Enter a variable (lowercase!): ";
+                            std::cin >> var2;
+
+                            if (var2 == 'a')
+                            {
+                                num1 = a;
+                            }
+
+                            if (var2 == 'b')
+                            {
+                                num1 = b;
+                            }
+
+                            if (var2 == 'c')
+                            {
+                                num1 = c;
+                            }
+
+                            if (var2 == 'x')
+                            {
+                                num1 = x;
+                            }
+
+                            if (var2 == 'y')
+                            {
+                                num1 = y;
+                            }
+
+                            if (var2 == 'z')
+                            {
+                                num1 = z;
+                            }
+
+                            std::cout << "Num2 (Num1 is the variable!): ";
+                            std::cin >> num2;
+
+                            std::cout << num1 / num2 << "\n";
+                        }
+
+                        if (option == "%")
+                        {
+                            int num1;
+                            int num2;
+
+                            char var2;
+                            std::cout << "Enter a variable (lowercase!): ";
+                            std::cin >> var2;
+
+                            if (var2 == 'a')
+                            {
+                                num1 = a;
+                            }
+
+                            if (var2 == 'b')
+                            {
+                                num1 = b;
+                            }
+
+                            if (var2 == 'c')
+                            {
+                                num1 = c;
+                            }
+
+                            if (var2 == 'x')
+                            {
+                                num1 = x;
+                            }
+
+                            if (var2 == 'y')
+                            {
+                                num1 = y;
+                            }
+
+                            if (var2 == 'z')
+                            {
+                                num1 = z;
+                            }
+
+                            std::cout << "Num2 (Num1 is the variable!): ";
+                            std::cin >> num2;
+
+                            std::cout << num1 % num2 << "\n";
+                        }
+
+                        if (option == "^")
+                        {
+                            double num1 = 3;
+                            double num2;
+
+                            char var2;
+                            std::cout << "Enter a variable (lowercase!): ";
+                            std::cin >> var2;
+
+                            if (var2 == 'a')
+                            {
+                                num1 = a;
+                            }
+
+                            if (var2 == 'b')
+                            {
+                                num1 = b;
+                            }
+
+                            if (var2 == 'c')
+                            {
+                                num1 = c;
+                            }
+
+                            if (var2 == 'x')
+                            {
+                                num1 = x;
+                            }
+
+                            if (var2 == 'y')
+                            {
+                                num1 = y;
+                            }
+
+                            if (var2 == 'z')
+                            {
+                                num1 = z;
+                            }
+
+                            std::cout << "Num2 (Num1 is the variable!): ";
+                            std::cin >> num2;
+
+                            std::cout << pow(num2, num1) << "\n";
+                        }
+
+                        if (option == "sqrt")
+                        {
+                            double num1 = 3;
+
+                            char var2;
+                            std::cout << "Enter a variable (lowercase!): ";
+                            std::cin >> var2;
+
+                            if (var2 == 'a')
+                            {
+                                num1 = a;
+                            }
+
+                            if (var2 == 'b')
+                            {
+                                num1 = b;
+                            }
+
+                            if (var2 == 'c')
+                            {
+                                num1 = c;
+                            }
+
+                            if (var2 == 'x')
+                            {
+                                num1 = x;
+                            }
+
+                            if (var2 == 'y')
+                            {
+                                num1 = y;
+                            }
+
+                            if (var2 == 'z')
+                            {
+                                num1 = z;
+                            }
+
+                            std::cout << sqrt(num1) << "\n";
+                        }
+                        
+                    }
+                }
+
+
             }
         }
 
@@ -263,5 +692,4 @@ int main() {
     
     return 0; // :D
 }
-// my projects are just getting bigger and bigger!
-// sooo
+// MILESTONE!!!
