@@ -8,7 +8,7 @@ VirtSH will have most of the features that IreSH has but I am planning to add mo
 # Installation:
 
 Install by downloading the source code and running the executable. (Allows you to edit VirtSH to your liking.)
-If your on windows you will have to recompile the whole project. (Sorry pals)
+If your on windows you will have to recompile the whole project and change anything that says python3 to python. (Sorry pals)
 
 Make sure to make an alias in your startup commands file (bashrc zshrc fishrc etc.)
 Make sure all of the project files are in the same directory, or you could change the code yourself to the path of the file you want.
