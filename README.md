@@ -15,8 +15,8 @@ Make sure all of the project files are in the same directory, or you could chang
 
 OR
 
-You can use the docker image! (Easier and Recommended)
-Open your commandline and run these two commands! 
+You can use the docker image! (Easier and Recommended, but the quick shells use the docker vm)
+Open your commandline and run these two commands! (You will need docker installed.) (And it supports windows!)
 
 ```
 docker pull saturndev/virtsh
