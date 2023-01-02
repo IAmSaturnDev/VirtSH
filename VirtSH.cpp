@@ -316,6 +316,7 @@ int main() {
                     std::cout << "You have 6 variables.\n";
                     std::cout << "They are a, b, c, x, y, z\n";
                     std::cout << "Do you want to 'edit' or do 'math' with them?\n";
+                    std::cin >> opt;
 
                     if (opt == "edit") {
                         double num;
