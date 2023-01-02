@@ -2,11 +2,12 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <cmath>
+#include "games.hpp"
 
 // randomly added comment NONE OF YOUR CONSERN! :D
 
 void functions() {
-    std::cout << "Commands: help(how you got here), weather, hi or hello, bye or exit, search, sh, count, calc, say\nlist, license";
+    std::cout << "Commands: help(how you got here), weather, hi or hello, bye or exit, search, sh, count, calc, say,\nlist, license, games";
     std::cout << "\nNotice: All commands are lower cased! Upset some easter eggs! Hint: Check the source code!";
     std::cout << "\n";
     
@@ -163,7 +164,7 @@ int main() {
 
         if (in == "calc") {
             while (true) {
-                std::cout << "Choose an option: exit, +, -, *, /, %, ^, sqrt, abs, cos, sin\n";
+                std::cout << "Choose an option: exit, +, -, *, /, %, ^, sqrt, abs, cos, sin, var\n";
                 std::string option;
                 std::cin >> option;
 
@@ -359,7 +360,7 @@ int main() {
                     }
 
                     if (opt == "math") {
-                        std::cout << "Choose an option:  +, -, *, /, %, ^, sqrt, var\n";
+                        std::cout << "Choose an option:  +, -, *, /, %, ^, sqrt\n";
                         std::string option;
                         std::cin >> option;
 
@@ -688,32 +689,38 @@ int main() {
         }
 
         if (in == "list") {
-            bool done = false;
-            std::cout << "What is the name of your list: ";
-            std::string name;
-            std::cin >> name;
-            std::cout << "The name of your list is: " << name << ".\n";
-            std::string list[] = {};
-
-            while (!done) {
-                std::string item;
-                std::cout << "Enter a item or type done: ";
-                std::cin >> item;
-                if (item == "done") {
-                    done = true;
-                }
-                
-                list->append(item);
-            }
-
-            for (std::string i : list) {
-                std::cout << i << "\n";
-            }
-            
+            system("lua lists.lua");
         }
 
         if (in == "license") {
+            std::cout << "\n";
             system("cat LICENSE.txt");
+            std::cout << "\n";
+        }
+
+        if (in == "idiot") {
+            std::cout << "\n";
+            std::cout << "     Why you mean.\n";
+            std::cout << "   /\n";
+            std::cout << "- -\n";
+            std::cout << "\n";
+            break;
+        }
+
+        if (in == "glitch") {
+            while (true) {
+                std::cout << "OOOO I am a glitch!\n";
+            }
+        }
+
+        if (in == "games") {
+            std::cout << "The games are: quiz";
+            std::string game;
+            std::cin >> game;
+
+            if (game == "quiz") {
+                quiz();
+            }
         }
 
         // easter egg :D
@@ -722,4 +729,5 @@ int main() {
     
     return 0; // :D
 }
-// This is my BIGGEST program EVER
+// This is my BIGGEST program EVER...
+// only because of the calculator :|
