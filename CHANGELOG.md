@@ -1,3 +1,6 @@
+# Jan 2 2023
+The calculator now shows 'var' for variable options (The variables are going to be revamped)
+
 # Jan 1 2023
 
 Added Docker image.

@@ -359,7 +359,7 @@ int main() {
                     }
 
                     if (opt == "math") {
-                        std::cout << "Choose an option:  +, -, *, /, %, ^, sqrt\n";
+                        std::cout << "Choose an option:  +, -, *, /, %, ^, sqrt, var\n";
                         std::string option;
                         std::cin >> option;
 
