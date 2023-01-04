@@ -1,4 +1,4 @@
-FROM  --platform=arm64v8 ubuntu
+FROM  --platform=arm64 ubuntu
 COPY . /app
 WORKDIR /app
 RUN apt-get update
