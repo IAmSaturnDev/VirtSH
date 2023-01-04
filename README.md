@@ -3,8 +3,6 @@
 # NOTICES:
 You will need lua and python install on your computer to run this program!
 
-VirtSH will have most of the features that IreSH has but I am planning to add more in the future
-
 # Installation:
 
 Install by downloading the source code and running the executable. (Allows you to edit VirtSH to your liking.)
