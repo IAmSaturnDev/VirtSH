@@ -14,8 +14,8 @@ while true do
     table.insert(list, item)
 end
 
-print("Items in: '" .. list .. "'")
+print("Items in: '" .. list_name .. "'")
 
-for index, value in ipairs(list) do
-    print(value)
+for i = 1, #list do
+    print(list[i])
 end
