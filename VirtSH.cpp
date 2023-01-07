@@ -696,6 +696,16 @@ int main() {
             std::cout << "\n";
             system("cat LICENSE.txt");
             std::cout << "\n";
+            std::string accept;
+            std::cout << "Do you accept the license? (y/n) ";
+            std::cin >> accept;
+
+            if (accept == "y") {
+                std::cout << "Thank you for accepting the license :)\n";
+            }else {
+                std::cout << "You must accept the license to use the software.\n";
+                break;
+            }
         }
 
         if (in == "idiot") {
