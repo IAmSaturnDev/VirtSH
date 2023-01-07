@@ -1,6 +1,6 @@
 # Jan 7 2023: New games
 
-Added rando number game.
+Added random number game.
 
 
 
