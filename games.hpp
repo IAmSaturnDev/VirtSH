@@ -8,3 +8,7 @@
 void quiz() {
     system("lua quiz.lua");
 }
+
+void ranNum() {
+    system("lua num_game.lua");
+}

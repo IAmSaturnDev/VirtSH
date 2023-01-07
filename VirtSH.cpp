@@ -714,12 +714,16 @@ int main() {
         }
 
         if (in == "games") {
-            std::cout << "The games are: quiz";
+            std::cout << "The games are: quiz, random ";
             std::string game;
             std::cin >> game;
 
             if (game == "quiz") {
                 quiz();
+            }
+
+            if (game == "random") {
+                ranNum();
             }
         }
 

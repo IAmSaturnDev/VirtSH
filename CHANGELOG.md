@@ -1,3 +1,9 @@
+# Jan 7 2023: New games
+
+Added rando number game.
+
+
+
 # Jan 3 2023: Bug fixes
 
 Fixed the list error: 
