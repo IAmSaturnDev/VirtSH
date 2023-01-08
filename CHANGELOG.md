@@ -1,8 +1,12 @@
+# Jan 8 2023: Small changes
+
+Update the README.md
+
+Thats pretty much it.
+
 # Jan 7 2023: New games
 
 Added random number game.
-
-
 
 # Jan 3 2023: Bug fixes
 
@@ -11,6 +15,7 @@ attempt to concatenate a table value (local 'list')
 
 Fix:
 Looks like I was not paying attention in my code
+
 The list_name variable was unused and we were trying to combine the list with a string instead of using the list name variable.
 
 

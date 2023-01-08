@@ -1,14 +1,18 @@
-## Welcome to VirtSH
+# Welcome to VirtSH
 
-# NOTICES:
+## NOTICES:
 You will need lua and python install on your computer to run this program!
 
-# Installation:
+## Installation:
 
 Install by downloading the source code and running the executable. (Allows you to edit VirtSH to your liking.)
-If your on windows you will have to recompile the whole project and change anything that says python3 to python. (Sorry pals)
 
-Make sure to make an alias in your startup commands file (bashrc zshrc fishrc etc.)
+If your on windows you will have to recompile the C++ file and change anything that says python3 to python. 
+
+On linux you can just recompile the C++ file so it works on your device
+
+Make sure to make an alias in your startup commands file (bashrc zshrc fish-config etc.)
+
 Make sure all of the project files are in the same directory, or you could change the code yourself to the path of the file you want.
 
 OR
@@ -24,7 +28,7 @@ docker pull saturndev/virtsh
 docker run -it saturndev/virtsh
 ```
 
-# Features:
+## Features:
 
 Check the source code for easter eggs :-)
 
@@ -38,7 +42,7 @@ Calculator
 
 And more!
 
-# Credits:
+## Credits:
 Not everything was made by me :)
 
 
